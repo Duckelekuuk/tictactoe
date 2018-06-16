@@ -27,7 +27,7 @@ class Board {
         return _scanWinner() != null;
       } else throw new FieldAlreadyFilledException("The field $column : $row is already filled");
     } else {
-      throw new FieldAlreadyFilledException();
+      throw new InvalidFieldException();
     }
   }
 
